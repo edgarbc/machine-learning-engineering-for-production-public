@@ -5,7 +5,6 @@ from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import StandardScaler
 
 
-
 def test_pipeline_and_scaler():
 
     # Check if clf is an instance of sklearn.pipeline.Pipeline 
@@ -17,6 +16,7 @@ def test_pipeline_and_scaler():
         # sklearn.preprocessing.StandardScaler
         firstStep = [v for v in clf.named_steps.values()][0]
         assert isinstance(firstStep, StandardScaler)
+
 
 def test_accuracy():
 
